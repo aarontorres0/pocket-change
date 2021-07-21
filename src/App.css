@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: white;
+  color: teal;
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  margin-bottom: 80px; /* provides some white space on the  bottom*/
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  border: 1px solid teal;
+}
+
+form button {
+  color: teal;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: teal;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.income-container,
+.expense-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.income-list,
+.expense-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.income,
+.expense {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.income-input-value,
+.expense-input-value {
+  max-width: 15%;
+}
+
+.income li,
+.expense li {
+  flex: 1; /* will make the complete and trash buttons be side by side */
+}
+
+.income-item,
+.expense-item {
+  padding: 0rem 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: white;
+    color: teal;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    margin-bottom: 40px; /* provides some white space on the  bottom*/
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+    border: 1px solid teal;
   }
 }
