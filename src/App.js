@@ -9,11 +9,11 @@ function App() {
   const [balance, setBalance] = useState(0);
 
   const [inputText, setInputText] = useState("");
-  const [inputDollar, setDollarInput] = useState("");
+  const [inputDollarText, setDollarInputText] = useState("");
   const [todos, setTodos] = useState([]);
 
   const [inputExpenseText, setInputExpenseText] = useState("");
-  const [inputExpenseDollar, setExpenseDollarInput] = useState("");
+  const [inputExpenseDollarText, setExpenseDollarInputText] = useState("");
   const [expenseTodos, setExpenseTodos] = useState([]);
 
   return (
@@ -29,8 +29,8 @@ function App() {
         setBalance={setBalance}
         inputText={inputText}
         setInputText={setInputText}
-        inputDollar={inputDollar}
-        setDollarInput={setDollarInput}
+        inputDollarText={inputDollarText}
+        setDollarInputText={setDollarInputText}
         todos={todos}
         setTodos={setTodos}
       />
@@ -40,8 +40,8 @@ function App() {
         setBalance={setBalance}
         inputExpenseText={inputExpenseText}
         setInputExpenseText={setInputExpenseText}
-        inputExpenseDollar={inputExpenseDollar}
-        setExpenseDollarInput={setExpenseDollarInput}
+        inputExpenseDollarText={inputExpenseDollarText}
+        setExpenseDollarInputText={setExpenseDollarInputText}
         expenseTodos={expenseTodos}
         setExpenseTodos={setExpenseTodos}
       />

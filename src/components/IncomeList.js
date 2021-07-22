@@ -7,7 +7,7 @@ const IncomeList = ({ todos }) => {
     <div className="income-container">
       <ul className="income-list">
         {todos.map((entry) => (
-          <Entry />
+          <Entry id={entry.id} text={entry.text} />
         ))}
       </ul>
     </div>

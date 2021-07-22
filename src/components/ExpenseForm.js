@@ -5,8 +5,8 @@ const ExpenseForm = ({
   setBalance,
   inputExpenseText,
   setInputExpenseText,
-  inputExpenseDollar,
-  setExpenseDollarInput,
+  inputExpenseDollarText,
+  setExpenseDollarInputText,
   expenseTodos,
   setExpenseTodos,
 }) => {
@@ -14,7 +14,7 @@ const ExpenseForm = ({
     setInputExpenseText(e.target.value);
   };
   const inputExpenseDollarHandler = (e) => {
-    setExpenseDollarInput(e.target.value);
+    setExpenseDollarInputText(e.target.value);
   };
   const submitHandler = (e) => {
     e.preventDefault();
@@ -22,14 +22,14 @@ const ExpenseForm = ({
       ...expenseTodos,
       {
         text: inputExpenseText,
-        amount: parseInt(inputExpenseDollar),
+        amount: parseInt(inputExpenseDollarText),
         id: Math.random() * 100,
       },
     ]);
     // maybe I should do setBalance here instead of balanceHandler. button onclick calls submithandler
-    setBalance(balance - parseInt(inputExpenseDollar));
+    setBalance(balance - parseInt(inputExpenseDollarText));
     setInputExpenseText("");
-    setExpenseDollarInput("");
+    setExpenseDollarInputText("");
   };
   const balanceHandler = (e) => {
     setBalance(12);
@@ -45,7 +45,7 @@ const ExpenseForm = ({
         placeholder="Input an expense"
       ></input>
       <input
-        value={inputExpenseDollar}
+        value={inputExpenseDollarText}
         onChange={inputExpenseDollarHandler}
         type="number"
         className="expense-input-value"
