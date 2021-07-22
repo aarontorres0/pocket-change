@@ -4,6 +4,7 @@ import "./App.css";
 import IncomeForm from "./components/IncomeForm";
 import IncomeList from "./components/IncomeList";
 import ExpenseForm from "./components/ExpenseForm";
+import ExpenseList from "./components/ExpenseList";
 
 function App() {
   const [balance, setBalance] = useState(0);
@@ -45,6 +46,7 @@ function App() {
         expenseEntries={expenseEntries}
         setExpenseEntries={setExpenseEntries}
       />
+      <ExpenseList expenseEntries={expenseEntries} />
     </div>
   );
 }
