@@ -7,8 +7,8 @@ const ExpenseForm = ({
   setInputExpenseText,
   inputExpenseDollarText,
   setExpenseDollarInputText,
-  expenseTodos,
-  setExpenseTodos,
+  expenseEntries,
+  setExpenseEntries,
 }) => {
   const inputExpenseTextHandler = (e) => {
     setInputExpenseText(e.target.value);
@@ -18,8 +18,8 @@ const ExpenseForm = ({
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    setExpenseTodos([
-      ...expenseTodos,
+    setExpenseEntries([
+      ...expenseEntries,
       {
         text: inputExpenseText,
         amount: parseInt(inputExpenseDollarText),

@@ -3,33 +3,33 @@ import React from "react";
 const IncomeForm = ({
   balance,
   setBalance,
-  todos,
-  setTodos,
-  inputText,
-  setInputText,
+  inputIncomeText,
+  setInputIncomeText,
   inputDollarText,
   setDollarInputText,
+  incomeEntries,
+  setIncomeEntries,
 }) => {
   const inputTextHandler = (e) => {
     console.log(e.target.value);
-    setInputText(e.target.value);
+    setInputIncomeText(e.target.value);
   };
   const inputDollarTextHandler = (e) => {
     setDollarInputText(e.target.value);
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos,
+    setIncomeEntries([
+      ...incomeEntries,
       {
-        text: inputText,
+        text: inputIncomeText,
         amount: parseInt(inputDollarText),
         id: Math.random() * 100,
       },
     ]);
     // maybe I should do setBalance here instead of balanceHandler. button onclick calls submithandler
     setBalance(balance + parseInt(inputDollarText));
-    setInputText("");
+    setInputIncomeText("");
     setDollarInputText("");
   };
   const balanceHandler = (e) => {
@@ -39,7 +39,7 @@ const IncomeForm = ({
   return (
     <form>
       <input
-        value={inputText}
+        value={inputIncomeText}
         onChange={inputTextHandler}
         type="text"
         className="income-input"

@@ -8,13 +8,13 @@ import ExpenseForm from "./components/ExpenseForm";
 function App() {
   const [balance, setBalance] = useState(0);
 
-  const [inputText, setInputText] = useState("");
+  const [inputIncomeText, setInputIncomeText] = useState("");
   const [inputDollarText, setDollarInputText] = useState("");
-  const [todos, setTodos] = useState([]);
+  const [incomeEntries, setIncomeEntries] = useState([]);
 
   const [inputExpenseText, setInputExpenseText] = useState("");
   const [inputExpenseDollarText, setExpenseDollarInputText] = useState("");
-  const [expenseTodos, setExpenseTodos] = useState([]);
+  const [expenseEntries, setExpenseEntries] = useState([]);
 
   return (
     <div className="App">
@@ -27,14 +27,14 @@ function App() {
       <IncomeForm
         balance={balance}
         setBalance={setBalance}
-        inputText={inputText}
-        setInputText={setInputText}
+        inputIncomeText={inputIncomeText}
+        setInputIncomeText={setInputIncomeText}
         inputDollarText={inputDollarText}
         setDollarInputText={setDollarInputText}
-        todos={todos}
-        setTodos={setTodos}
+        incomeEntries={incomeEntries}
+        setIncomeEntries={setIncomeEntries}
       />
-      <IncomeList todos={todos} />
+      <IncomeList incomeEntries={incomeEntries} />
       <ExpenseForm
         balance={balance}
         setBalance={setBalance}
@@ -42,8 +42,8 @@ function App() {
         setInputExpenseText={setInputExpenseText}
         inputExpenseDollarText={inputExpenseDollarText}
         setExpenseDollarInputText={setExpenseDollarInputText}
-        expenseTodos={expenseTodos}
-        setExpenseTodos={setExpenseTodos}
+        expenseEntries={expenseEntries}
+        setExpenseEntries={setExpenseEntries}
       />
     </div>
   );
