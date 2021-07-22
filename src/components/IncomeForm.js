@@ -3,6 +3,8 @@ import React from "react";
 const IncomeForm = ({
   balance,
   setBalance,
+  incomeBalance,
+  setIncomeBalance,
   inputIncomeText,
   setInputIncomeText,
   inputDollarText,
@@ -11,7 +13,6 @@ const IncomeForm = ({
   setIncomeEntries,
 }) => {
   const inputTextHandler = (e) => {
-    console.log(e.target.value);
     setInputIncomeText(e.target.value);
   };
   const inputDollarTextHandler = (e) => {
@@ -29,11 +30,9 @@ const IncomeForm = ({
     ]);
     // maybe I should do setBalance here instead of balanceHandler. button onclick calls submithandler
     setBalance(balance + parseInt(inputDollarText));
+    setIncomeBalance(incomeBalance + parseInt(inputDollarText));
     setInputIncomeText("");
     setDollarInputText("");
-  };
-  const balanceHandler = (e) => {
-    setBalance(12);
   };
 
   return (

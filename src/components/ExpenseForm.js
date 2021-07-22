@@ -3,6 +3,8 @@ import React from "react";
 const ExpenseForm = ({
   balance,
   setBalance,
+  expenseBalance,
+  setExpenseBalance,
   inputExpenseText,
   setInputExpenseText,
   inputExpenseDollarText,
@@ -28,11 +30,9 @@ const ExpenseForm = ({
     ]);
     // maybe I should do setBalance here instead of balanceHandler. button onclick calls submithandler
     setBalance(balance - parseInt(inputExpenseDollarText));
+    setExpenseBalance(expenseBalance + parseInt(inputExpenseDollarText));
     setInputExpenseText("");
     setExpenseDollarInputText("");
-  };
-  const balanceHandler = (e) => {
-    setBalance(12);
   };
 
   return (

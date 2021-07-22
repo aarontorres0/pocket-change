@@ -8,6 +8,8 @@ import ExpenseList from "./components/ExpenseList";
 
 function App() {
   const [balance, setBalance] = useState(0);
+  const [incomeBalance, setIncomeBalance] = useState(0);
+  const [expenseBalance, setExpenseBalance] = useState(0);
 
   const [inputIncomeText, setInputIncomeText] = useState("");
   const [inputDollarText, setDollarInputText] = useState("");
@@ -23,11 +25,13 @@ function App() {
         <h1>Pocket Change</h1>
       </header>
       <div>
-        <h2 className="budget">Total Leftover: ${balance}</h2>
+        <h2 className="budget">Leftover balance: ${balance}</h2>
       </div>
       <IncomeForm
         balance={balance}
         setBalance={setBalance}
+        incomeBalance={incomeBalance}
+        setIncomeBalance={setIncomeBalance}
         inputIncomeText={inputIncomeText}
         setInputIncomeText={setInputIncomeText}
         inputDollarText={inputDollarText}
@@ -35,10 +39,15 @@ function App() {
         incomeEntries={incomeEntries}
         setIncomeEntries={setIncomeEntries}
       />
+      <div>
+        <h3>Income: ${incomeBalance}</h3>
+      </div>
       <IncomeList incomeEntries={incomeEntries} />
       <ExpenseForm
         balance={balance}
         setBalance={setBalance}
+        expenseBalance={expenseBalance}
+        setExpenseBalance={setExpenseBalance}
         inputExpenseText={inputExpenseText}
         setInputExpenseText={setInputExpenseText}
         inputExpenseDollarText={inputExpenseDollarText}
@@ -46,6 +55,9 @@ function App() {
         expenseEntries={expenseEntries}
         setExpenseEntries={setExpenseEntries}
       />
+      <div>
+        <h3>Expenses: ${expenseBalance}</h3>
+      </div>
       <ExpenseList expenseEntries={expenseEntries} />
     </div>
   );
