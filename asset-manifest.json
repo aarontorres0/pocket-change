@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pocket-change/static/css/main.248fb132.chunk.css",
-    "main.js": "/pocket-change/static/js/main.dc07f851.chunk.js",
-    "main.js.map": "/pocket-change/static/js/main.dc07f851.chunk.js.map",
+    "main.js": "/pocket-change/static/js/main.c36e847d.chunk.js",
+    "main.js.map": "/pocket-change/static/js/main.c36e847d.chunk.js.map",
     "runtime-main.js": "/pocket-change/static/js/runtime-main.c74b217e.js",
     "runtime-main.js.map": "/pocket-change/static/js/runtime-main.c74b217e.js.map",
     "static/js/2.e9c00487.chunk.js": "/pocket-change/static/js/2.e9c00487.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c74b217e.js",
     "static/js/2.e9c00487.chunk.js",
     "static/css/main.248fb132.chunk.css",
-    "static/js/main.dc07f851.chunk.js"
+    "static/js/main.c36e847d.chunk.js"
   ]
 }
