@@ -43,6 +43,10 @@ function App() {
         <h3>Income: ${incomeBalance}</h3>
       </div>
       <IncomeList
+        balance={balance}
+        setBalance={setBalance}
+        incomeBalance={incomeBalance}
+        setIncomeBalance={setIncomeBalance}
         incomeEntries={incomeEntries}
         setIncomeEntries={setIncomeEntries}
       />
@@ -61,7 +65,14 @@ function App() {
       <div>
         <h3>Expenses: ${expenseBalance}</h3>
       </div>
-      <ExpenseList expenseEntries={expenseEntries} />
+      <ExpenseList
+        balance={balance}
+        setBalance={setBalance}
+        expenseBalance={expenseBalance}
+        setExpenseBalance={setExpenseBalance}
+        expenseEntries={expenseEntries}
+        setExpenseEntries={setExpenseEntries}
+      />
     </div>
   );
 }
