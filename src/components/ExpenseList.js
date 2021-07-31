@@ -22,9 +22,7 @@ const ExpenseList = ({
             expenseEntries={expenseEntries}
             setExpenseEntries={setExpenseEntries}
             expenseEntry={expenseEntry}
-            id={expenseEntry.id}
-            text={expenseEntry.text}
-            amount={expenseEntry.amount}
+            key={expenseEntry.id}
           />
         ))}
       </ul>

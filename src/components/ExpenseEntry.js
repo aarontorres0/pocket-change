@@ -8,8 +8,6 @@ const ExpenseEntry = ({
   expenseEntries,
   setExpenseEntries,
   expenseEntry,
-  text,
-  amount,
 }) => {
   //Events
   /**
@@ -17,14 +15,14 @@ const ExpenseEntry = ({
    * out to get rid of it
    */
   const deleteHandler = () => {
-    setBalance(balance + amount);
-    setExpenseBalance(expenseBalance - amount);
+    setBalance(balance + expenseEntry.amount);
+    setExpenseBalance(expenseBalance - expenseEntry.amount);
     setExpenseEntries(expenseEntries.filter((el) => el.id !== expenseEntry.id));
   };
   return (
     <div className="expense">
-      <li className="expense-item">{text}</li>
-      <li className="expense-item">${amount}</li>
+      <li className="expense-item">{expenseEntry.text}</li>
+      <li className="expense-item">${expenseEntry.amount}</li>
       <button onClick={deleteHandler} className="trash-btn">
         <i className="fas fa-trash"></i>
       </button>

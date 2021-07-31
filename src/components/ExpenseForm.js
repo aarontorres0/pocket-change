@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const ExpenseForm = ({
   balance,
@@ -25,7 +26,7 @@ const ExpenseForm = ({
       {
         text: inputExpenseText,
         amount: parseInt(inputExpenseDollarText),
-        id: Math.random() * 100,
+        id: uuidv4(),
       },
     ]);
     // maybe I should do setBalance here instead of balanceHandler. button onclick calls submithandler
