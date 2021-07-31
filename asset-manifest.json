@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pocket-change/static/css/main.5ad9e9ad.chunk.css",
-    "main.js": "/pocket-change/static/js/main.8dadb278.chunk.js",
-    "main.js.map": "/pocket-change/static/js/main.8dadb278.chunk.js.map",
+    "main.css": "/pocket-change/static/css/main.248fb132.chunk.css",
+    "main.js": "/pocket-change/static/js/main.dc07f851.chunk.js",
+    "main.js.map": "/pocket-change/static/js/main.dc07f851.chunk.js.map",
     "runtime-main.js": "/pocket-change/static/js/runtime-main.c74b217e.js",
     "runtime-main.js.map": "/pocket-change/static/js/runtime-main.c74b217e.js.map",
     "static/js/2.e9c00487.chunk.js": "/pocket-change/static/js/2.e9c00487.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.84563eb1.chunk.js": "/pocket-change/static/js/3.84563eb1.chunk.js",
     "static/js/3.84563eb1.chunk.js.map": "/pocket-change/static/js/3.84563eb1.chunk.js.map",
     "index.html": "/pocket-change/index.html",
-    "static/css/main.5ad9e9ad.chunk.css.map": "/pocket-change/static/css/main.5ad9e9ad.chunk.css.map",
+    "static/css/main.248fb132.chunk.css.map": "/pocket-change/static/css/main.248fb132.chunk.css.map",
     "static/js/2.e9c00487.chunk.js.LICENSE.txt": "/pocket-change/static/js/2.e9c00487.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c74b217e.js",
     "static/js/2.e9c00487.chunk.js",
-    "static/css/main.5ad9e9ad.chunk.css",
-    "static/js/main.8dadb278.chunk.js"
+    "static/css/main.248fb132.chunk.css",
+    "static/js/main.dc07f851.chunk.js"
   ]
 }
