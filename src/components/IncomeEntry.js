@@ -1,6 +1,6 @@
 import React from "react";
 
-const Entry = ({ text, amount }) => {
+const IncomeEntry = ({ text, amount }) => {
   return (
     <div className="income">
       <li className="income-item">{text}</li>
@@ -9,4 +9,4 @@ const Entry = ({ text, amount }) => {
   );
 };
 
-export default Entry;
+export default IncomeEntry;

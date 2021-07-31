@@ -42,7 +42,10 @@ function App() {
       <div>
         <h3>Income: ${incomeBalance}</h3>
       </div>
-      <IncomeList incomeEntries={incomeEntries} />
+      <IncomeList
+        incomeEntries={incomeEntries}
+        setIncomeEntries={setIncomeEntries}
+      />
       <ExpenseForm
         balance={balance}
         setBalance={setBalance}
